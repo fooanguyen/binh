@@ -1,0 +1,13 @@
+.accordion .card-header:after {
+  content: "\2012";
+  float: right;
+}
+
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\002B";
+}
+
+.hr {
+  height: 1px;
+}

@@ -1,0 +1,295 @@
+@font-face{
+	font-family:Seven-Swordmen-BB;
+	src: url(../font/SEVESBRG.TTF);
+	font-weight: bold;
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+	background: #fce7d6;
+}
+
+.menucontainer{
+	height: 150px;	/*cover entire region 1 height*/
+}
+
+.storename{
+	background-image: url("../images/store-name.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 85%;
+    width: 40%;
+	height: 150px;	/*cover entire region 1 height*/
+	float: left;
+}
+
+.navigationmenu{
+	
+	width: 60%;
+	height: 150px;	/*cover entire region 1 height*/
+	float: left;
+}
+
+ul {
+	width: 60%;
+	height: 70px;
+	margin-top: 40px;
+	position: absolute;
+}
+
+li {
+	margin-left: 2%;
+	list-style: none;
+	float: left;
+	width: 20%;
+	height: 70px;
+	background: orange;
+	border-radius: 10px 10px 10px 10px;
+}
+li:first-child{
+	margin-left: 10%;
+}
+
+li a{
+	display: block;
+	padding-top: 25px;  /*25px + 45px height to match with li height*/
+	height: 40px;
+	margin-left: 2px;
+	font-family: Seven-Swordmen-BB;
+	font-size: 13px;
+	color: yellow;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px 10px 10px 10px;
+}
+
+li a:hover:not(.active) {
+	text-align: center;
+	color: green;
+	background: white;
+}
+
+li a.active	{
+	text-align: center;
+	color: green;
+	background: white;
+}
+
+
+.hrslide{
+	border-bottom: 1px solid white;
+}
+
+.footer{
+	text-align: left;
+	font-weight: bold;
+	width: 40%;
+	float: left;
+	height: 120px;
+	margin-left:15%;
+}
+
+.time{
+	float: left;
+	width: 40%;
+	height: 120px;
+}
+
+.clear{
+	clear:both;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+th{
+	color: green;
+	font-size: 20px;
+	text-align: left;
+	
+}
+
+td{
+	width: 40%;
+	color: blue;
+	font-size: 20px;
+	text-align: left;
+}
+
+.map{
+	margin-top: 15px;
+	background-image: url("../images/map.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	margin-left: 20%;
+	height:350px;
+	width: 60%;
+	padding: 0;
+}
+
+.cursor {
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+	th{
+		font-size: 15px;
+	}
+	td{
+		font-size: 15px;
+	}
+	.footer{
+		height: 75px;
+	}
+	.time{
+		height: 75px;
+	}
+	.map{
+
+		height: 250px;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+	th{
+		font-size: 12px;
+	}
+	td{
+		font-size: 12px;
+	}
+	.map{
+
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.footer{
+		width: 60%;
+		margin-left:0;
+	}
+	.map{
+		margin-left: 0;
+		width: 100%;
+	}
+	
+}
+@media screen and (max-width: 500px) {
+	
+	body{
+		margin: 0;
+	}
+
+	.menucontainer{
+		height: 100px;
+		width: 100%;
+	}	
+	.storename{
+		margin: 0;
+		margin: auto;
+		height: 50px;
+		width: 100%;
+		background: #fce7d6;
+		background-image: url("../images/store-name.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.navigationmenu{
+		margin-left: 0px;
+		margin-top: 10px;
+
+	}
+
+	ul {
+		list-style-type: none;
+		margin-left: 0px;
+		margin-top: 0px;
+		width: 100%;
+		border-radius: 0;
+		position: absolute;
+	}
+
+	li {
+		width: 100%;
+		height: 40px;
+		display: block;
+		margin-left: 0px;
+		border-radius: 0px 0px 0px 0px;
+	}
+	li:first-child{
+		margin-left: 0;
+	}
+	li a {
+		display: block;
+		font-size: 12px;
+		text-align: center;
+		margin-left: 0px;
+		text-decoration: none;
+		padding-top: 10%;
+		border-image: none;
+		border-radius: 0px;
+		padding-top: 10px;
+		height: 30px;
+		
+	}
+
+	li a:hover:not(.active) {
+		border-bottom: none;
+		border-image: none;
+		background: white;
+	}
+
+	li a.active	{
+	
+		color: green;
+		border-bottom: none;
+		border-image: none;
+	}
+
+	.footer{
+		margin-top:10px;
+		padding-bottom:2px;
+		text-align: left;
+		font-size: 10px;
+		color: green;
+		font-weight: bold;
+		height: 5%;
+		width: 50%;
+		min-width: 200px;
+	}
+	.time{
+		margin-top:10px;
+		width: 50%;
+		min-width: 200px;
+	}
+
+	.map{
+		margin-left: 0;
+		height:200px;
+		width: 100%;
+		padding: 0;
+	}
+	
+
+}
+@media screen and (max-width: 450px) {
+	.footer{
+		width: 100%;
+	}
+	.time{
+		width: 100%;
+	}
+	.map{
+
+		height:150px;
+		min-width: 200px;
+	}
+}

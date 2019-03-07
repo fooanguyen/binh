@@ -1,0 +1,233 @@
+@font-face{
+	font-family:Seven-Swordmen-BB;
+	src: url(../font/SEVESBRG.TTF);
+	font-weight: bold;
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+	background: #fce7d6;
+}
+
+
+.menucontainer{
+	height: 150px;	/*cover entire region 1 height*/
+}
+
+.storename{
+	background-image: url("../images/store-name.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 85%;
+    width: 40%;
+	height: 150px;	/*cover entire region 1 height*/
+	float: left;
+}
+
+.navigationmenu{
+	
+	width: 60%;
+	height: 150px;	/*cover entire region 1 height*/
+	float: left;
+}
+
+ul {
+	width: 60%;
+	height: 70px;
+	margin-top: 40px;
+	position: absolute;
+}
+
+li {
+	margin-left: 2%;
+	list-style: none;
+	float: left;
+	width: 20%;
+	height: 70px;
+	background: orange;
+	border-radius: 10px 10px 10px 10px;
+}
+li:first-child{
+	margin-left: 10%;
+}
+
+li a{
+	display: block;
+	padding-top: 25px;  /*25px + 45px height to match with li height*/
+	height: 40px;
+	margin-left: 2px;
+	font-family: Seven-Swordmen-BB;
+	font-size: 13px;
+	color: yellow;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px 10px 10px 10px;
+}
+
+li a:hover:not(.active) {
+	text-align: center;
+	color: green;
+	background: white;
+}
+
+li a.active	{
+	text-align: center;
+	color: green;
+	background: white;
+}
+
+.infobox{
+	text-align:center;
+}
+
+.info{
+	width: 30%;
+	min-width: 200px;
+	height: 30px;
+	text-align: center;
+}
+
+input::placeholder{
+	color: lightgrey;
+}
+
+textarea::placeholder{
+	color: lightgrey;
+	text-align: center;
+}
+.requestinfo{
+	width: 30%;
+	height: 100px;
+	min-width: 200px;
+}
+
+.submit{
+	width: 100px;
+	height: 40px;
+	font-family: Seven-Swordmen-BB;
+	font-size: 13px;
+	color: yellow;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px 10px 10px 10px;
+	background: orange;
+	outline: none;
+}
+
+.hrslide{
+	border-bottom: 1px solid white;
+}
+
+.footer{
+	padding-top: 1%;
+	text-align: center;
+	font-size: 1.5vw;
+	color: green;
+	font-weight: bold;
+	height: 5%;
+
+	
+}
+
+@media screen and (max-width: 900px) {
+	body{
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+	li a {
+		font-size: 10px;	
+	}
+
+}
+
+@media screen and (max-width: 700px){
+	li a {
+		font-size: 8px;	
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	body{
+		margin: 0;
+	}
+
+	.menucontainer{
+		height: 100px;
+		width: 100%;
+	}	
+	.storename{
+		margin: 0;
+		margin: auto;
+		height: 50px;
+		width: 100%;
+		background: #fce7d6;
+		background-image: url("../images/store-name.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.navigationmenu{
+		margin-left: 0px;
+		margin-top: 10px;
+
+	}
+
+	ul {
+		list-style-type: none;
+		margin-left: 0px;
+		margin-top: 0px;
+		width: 100%;
+		border-radius: 0;
+		position: absolute;
+	}
+
+	li {
+		width: 100%;
+		height: 40px;
+		display: block;
+		margin-left: 0px;
+		border-radius: 0px 0px 0px 0px;
+	}
+	li:first-child{
+		margin-left: 0;
+	}
+	li a {
+		display: block;
+		font-size: 12px;
+		text-align: center;
+		margin-left: 0px;
+		text-decoration: none;
+		padding-top: 10%;
+		border-image: none;
+		border-radius: 0px;
+		padding-top: 10px;
+		height: 30px;
+		
+	}
+
+	li a:hover:not(.active) {
+		border-bottom: none;
+		border-image: none;
+		background: white;
+	}
+
+	li a.active	{
+	
+		color: green;
+		border-bottom: none;
+		border-image: none;
+	}
+
+	.infobox{
+		margin-top: 150px;
+		text-align:center;
+	}
+}
+
